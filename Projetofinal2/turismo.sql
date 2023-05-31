@@ -54,6 +54,26 @@ INSERT INTO `transportes` (`cod_transporte`, `tipo`, `assentos`, `combustivel`) 
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `cod_usuario` int(11) NOT NULL,
+  `nome` varchar(50) NOT NULL,
+  `senha` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `usuarios`
+--
+
+-- --------------------------------------------------------
+
+INSERT INTO `usuarios` (`cod_usuario`, `nome`, `senha`) VALUES
+(1, 'Jerson Gesus', 'senha'),
+(2, 'Tiririca', 'florentina');
+
+--
 -- Estrutura da tabela `transportes_viagens`
 --
 
